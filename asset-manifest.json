@@ -1,17 +1,23 @@
 {
   "files": {
     "main.css": "/My/static/css/main.be07675c.css",
-    "main.js": "/My/static/js/main.656fea2f.js",
+    "main.js": "/My/static/js/main.d1cd11f4.js",
     "static/js/787.128fc6e9.chunk.js": "/My/static/js/787.128fc6e9.chunk.js",
     "static/media/img2.jpg": "/My/static/media/img2.a214111afb7e4dc16aa3.jpg",
+    "static/media/Azure.svg": "/My/static/media/Azure.34c7964368fa32c2968fde812dc827ff.svg",
+    "static/media/React.svg": "/My/static/media/React.f1484e295933af0e748d6a01b05a8361.svg",
+    "static/media/C-Sharp.svg": "/My/static/media/C-Sharp.04d9d2bb18b9781567f7340691dcc686.svg",
     "index.html": "/My/index.html",
+    "static/media/Angular.svg": "/My/static/media/Angular.3f781d9105b3bef395676155dd37e208.svg",
     "static/media/logo-svg.svg": "/My/static/media/logo-svg.6dc371a6d7c77a28b5b5280db075c98a.svg",
+    "static/media/VS-Code.svg": "/My/static/media/VS-Code.b8b1e001813039750e6c05c236ab0d46.svg",
+    "static/media/VS-2013.svg": "/My/static/media/VS-2013.bf694f6526d78023011f1906cc8387cc.svg",
     "main.be07675c.css.map": "/My/static/css/main.be07675c.css.map",
-    "main.656fea2f.js.map": "/My/static/js/main.656fea2f.js.map",
+    "main.d1cd11f4.js.map": "/My/static/js/main.d1cd11f4.js.map",
     "787.128fc6e9.chunk.js.map": "/My/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.be07675c.css",
-    "static/js/main.656fea2f.js"
+    "static/js/main.d1cd11f4.js"
   ]
 }
