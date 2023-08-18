@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/My/static/css/main.a20f647c.css",
-    "main.js": "/My/static/js/main.18eb798c.js",
+    "main.js": "/My/static/js/main.ea724924.js",
     "static/js/787.128fc6e9.chunk.js": "/My/static/js/787.128fc6e9.chunk.js",
     "static/media/img2.jpg": "/My/static/media/img2.a214111afb7e4dc16aa3.jpg",
     "static/media/Azure.svg": "/My/static/media/Azure.34c7964368fa32c2968fde812dc827ff.svg",
@@ -13,11 +13,11 @@
     "static/media/VS-Code.svg": "/My/static/media/VS-Code.b8b1e001813039750e6c05c236ab0d46.svg",
     "static/media/VS-2013.svg": "/My/static/media/VS-2013.bf694f6526d78023011f1906cc8387cc.svg",
     "main.a20f647c.css.map": "/My/static/css/main.a20f647c.css.map",
-    "main.18eb798c.js.map": "/My/static/js/main.18eb798c.js.map",
+    "main.ea724924.js.map": "/My/static/js/main.ea724924.js.map",
     "787.128fc6e9.chunk.js.map": "/My/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a20f647c.css",
-    "static/js/main.18eb798c.js"
+    "static/js/main.ea724924.js"
   ]
 }
