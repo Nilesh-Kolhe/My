@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/My/static/css/main.f47e406f.css",
-    "main.js": "/My/static/js/main.c31b1f49.js",
+    "main.js": "/My/static/js/main.1e4d8eb0.js",
     "static/js/787.128fc6e9.chunk.js": "/My/static/js/787.128fc6e9.chunk.js",
     "static/media/img2.jpg": "/My/static/media/img2.a214111afb7e4dc16aa3.jpg",
     "static/media/pune-univ-black.jpg": "/My/static/media/pune-univ-black.0e527e6773ee843614db.jpg",
@@ -18,6 +18,7 @@
     "index.html": "/My/index.html",
     "static/media/bootstrap.svg": "/My/static/media/bootstrap.98585727bcfe0b1555649ec9bbab236c.svg",
     "static/media/JS.svg": "/My/static/media/JS.00f3e5cf8bcf4ae623b3835ca5791b15.svg",
+    "static/media/Jira.svg": "/My/static/media/Jira.1b79d9d02350c124716652a3e72b8376.svg",
     "static/media/TS.svg": "/My/static/media/TS.a6305a733dd55243980aec55f96f70c5.svg",
     "static/media/Angular.svg": "/My/static/media/Angular.3f781d9105b3bef395676155dd37e208.svg",
     "static/media/logo-svg.svg": "/My/static/media/logo-svg.6dc371a6d7c77a28b5b5280db075c98a.svg",
@@ -27,11 +28,11 @@
     "static/media/VS-2013.svg": "/My/static/media/VS-2013.bf694f6526d78023011f1906cc8387cc.svg",
     "static/media/azure-devops.svg": "/My/static/media/azure-devops.e88b515dc44062c9fc0b92736d891ae1.svg",
     "main.f47e406f.css.map": "/My/static/css/main.f47e406f.css.map",
-    "main.c31b1f49.js.map": "/My/static/js/main.c31b1f49.js.map",
+    "main.1e4d8eb0.js.map": "/My/static/js/main.1e4d8eb0.js.map",
     "787.128fc6e9.chunk.js.map": "/My/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f47e406f.css",
-    "static/js/main.c31b1f49.js"
+    "static/js/main.1e4d8eb0.js"
   ]
 }
