@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/My/static/css/main.6b9f9d0a.css",
-    "main.js": "/My/static/js/main.0b9f968c.js",
+    "main.js": "/My/static/js/main.477f436a.js",
     "static/js/787.128fc6e9.chunk.js": "/My/static/js/787.128fc6e9.chunk.js",
     "static/media/img2.jpg": "/My/static/media/img2.a214111afb7e4dc16aa3.jpg",
     "static/media/telephone.jpg": "/My/static/media/telephone.181332266dcc5e6c0c0d.jpg",
@@ -32,11 +32,11 @@
     "static/media/VS-2013.svg": "/My/static/media/VS-2013.bf694f6526d78023011f1906cc8387cc.svg",
     "static/media/azure-devops.svg": "/My/static/media/azure-devops.e88b515dc44062c9fc0b92736d891ae1.svg",
     "main.6b9f9d0a.css.map": "/My/static/css/main.6b9f9d0a.css.map",
-    "main.0b9f968c.js.map": "/My/static/js/main.0b9f968c.js.map",
+    "main.477f436a.js.map": "/My/static/js/main.477f436a.js.map",
     "787.128fc6e9.chunk.js.map": "/My/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6b9f9d0a.css",
-    "static/js/main.0b9f968c.js"
+    "static/js/main.477f436a.js"
   ]
 }
