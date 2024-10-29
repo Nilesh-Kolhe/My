@@ -13,12 +13,12 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-        {/* <Route path="/" element={<Navigate to="home" />} /> */}
-          <Route path="/My" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<Home />} />
-          <Route path='/education' element={<Education />} />
-          <Route path='/work' element={<Work />} />
-          <Route path='/contact' element={<Contact />} />
+        <Route path="/" element={<Navigate to="home" />} />
+          {/* <Route path="/My" element={<Navigate to="/home" />} /> Add this and / before route for Local dev */}
+          <Route path="home" element={<Home />} />
+          <Route path='education' element={<Education />} />
+          <Route path='work' element={<Work />} />
+          <Route path='contact' element={<Contact />} />
         </Routes>
       </Router >
     </div >
