@@ -46,8 +46,8 @@ const Contact = () => {
                         <div className="img-container" style={{ flexDirection: "row", margin: "25px 5px" }}>
                             <img style={{ height: "37px" }} src={`${email}`} alt="Email Logo" />
                             <div>
-                                <p className="fw-bolder">GMail</p>
-                                <a className="text-muted" href="mailto:nilesh.work.001@gmail.com" rel="noreferrer" target="_blank"><p className="text-muted">nilesh.work.001</p></a>
+                                <p className="fw-bolder">Rocketmail</p>
+                                <a className="text-muted" href="mailto:kolhe.nilesh@rocketmail.com" rel="noreferrer" target="_blank"><p className="text-muted">kolhe.nilesh</p></a>
                             </div>
                         </div>
                     </div>
