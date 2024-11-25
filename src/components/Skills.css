@@ -1,13 +1,22 @@
-.work-container {
+.skills-container {
     display: flex;
     flex-direction: column;
     width: 50%;
+    margin: 10px 0px;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: row;
+    /* background-image: url("../img2.jpg");
+    background-size: cover; */
 }
 
 .img-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 3px 0px;
 }
 
 .img-container img.tech-logo:hover {

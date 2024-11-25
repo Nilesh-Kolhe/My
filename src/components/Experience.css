@@ -1,0 +1,33 @@
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    width: 50%;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.section-headline {
+    color: #fff;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.experience-section {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.org-name {
+    font-weight: 400;
+}
+
+.current-org {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+    margin: 8px 0px;
+}
