@@ -27,6 +27,21 @@ input {
     border-radius: 5px;
 }
 
+.social-container {
+    display: flex;
+    flex-direction: row;
+    margin: 10px -10px;
+
+    & > div {
+        display: flex;
+        margin: 10px -10px;
+    }
+
+    & > *:not(:first-child) {
+        margin: 10px -2.5px;;
+    }
+}
+
 @media only screen and (min-width : 320px) and (max-width : 768px) {
     .contact-container {
         flex-direction: column;
@@ -37,8 +52,16 @@ input {
         height: 70%;
     }
 
-    #social-container {
+    .social-container {
+        display: flex;
         flex-direction: column;
-        width: 100%;
+
+        & > div {
+            display: flex;
+        }
+
+        & > *:not(:first-child) {
+            margin: 10px -10px;;
+        }
     }
 }

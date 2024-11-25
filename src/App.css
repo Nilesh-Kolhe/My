@@ -13,21 +13,17 @@
   margin-left: 7px;
 }
 
-@media only screen
-and (min-width : 320px)
-and (max-width : 480px){
+@media only screen and (min-width : 320px) and (max-width : 480px) {
   .App {
     background-position-x: 760px;
     background-position-y: -135px;
   }
 }
 
-@media only screen
-and (min-device-width : 767px)
-and (max-device-width : 1025px) {
-    .App {
-      background-position: right;
-    }
+@media only screen and (min-device-width : 767px) and (max-device-width : 1025px) {
+  .App {
+    background-position: right;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

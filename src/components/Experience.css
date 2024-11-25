@@ -20,14 +20,24 @@
 }
 
 .org-name {
-    font-weight: 400;
+    font-weight: 600;
 }
 
-.current-org {
+.org {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color: #fff;
     width: 100%;
     margin: 8px 0px;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+    .org {
+        flex-direction: column;
+    }
+
+    .txt-muted {
+        font-size: smaller;
+    }
 }

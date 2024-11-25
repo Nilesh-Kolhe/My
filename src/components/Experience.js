@@ -8,15 +8,15 @@ const Experience = () => {
             </div>
             <hr />
             <div className="experience-section">
-                <div className='current-org'>
+                <div className='org'>
                     <div className="org-name">
-                        Atos/Eviden
+                        Atos
                         <p className="txt-muted" style={{ fontWeight: 'small' }}>Consultant</p>
                     </div>
-                    <div>2021 - </div>
+                    <div>2021 - 2024</div>
                 </div>
 
-                <div className='current-org'>
+                <div className='org'>
                     <div className="org-name">
                         CapGemini Technology Services
                         <p className="txt-muted" style={{ fontWeight: 'small' }}>Consultant</p>
@@ -24,7 +24,7 @@ const Experience = () => {
                     <div>2020 - 2021</div>
                 </div>
 
-                <div className='current-org'>
+                <div className='org'>
                     <div className="org-name">
                         Emerson Innovation center
                         <p className="txt-muted" style={{ fontWeight: 'small' }}>Senior Engineer I</p>
@@ -32,7 +32,7 @@ const Experience = () => {
                     <div>2020 - 2020</div>
                 </div>
 
-                <div className='current-org'>
+                <div className='org'>
                     <div className="org-name">
                         Tieto India Private Limited
                         <p className="txt-muted" style={{ fontWeight: 'small' }}>Software Engineer</p>
@@ -40,7 +40,7 @@ const Experience = () => {
                     <div>2017 - 2020</div>
                 </div>
 
-                <div className='current-org'>
+                <div className='org'>
                     <div className="org-name">
                         Infosys Limited
                         <p className="txt-muted" style={{ fontWeight: 'small' }}>Senior Systems Engineer</p>

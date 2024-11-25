@@ -12,7 +12,7 @@ const ReachMe = () => {
         <div className='reachme-container'>
             <div>
                 <div className='section-headline'>
-                    Contact <i class="bi bi-person-lines-fill"></i>
+                    Contact <i className="bi bi-person-lines-fill"></i>
                 </div>
                 <hr />
             </div>
@@ -27,29 +27,29 @@ const ReachMe = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ display: "flex", margin: "10px -10px" }}>
-                    <div style={{ display: "flex", flexDirection: "row", margin: "10px -10px" }}>
+                <div className="social-container" >
+                    <div>
                         <img style={{ height: "40px" }} src={`${linkedin}`} alt="LinkedIn Logo" />
                         <div>
                             <p className="fw-bold">LinkedIn</p>
                             <a className="txt-muted" href="https://linkedin.com/in/nilesh-kolhe/" rel="noreferrer" target="_blank">/nilesh-kolhe</a>
                         </div>
                     </div>
-                    <div style={{ display: "flex", flexDirection: "row", margin: "10px -2.5px" }}>
+                    <div>
                         <img style={{ height: "40px" }} src={`${instagram}`} alt="Instagram Logo" />
                         <div>
                             <p className="fw-bold">Instagram</p>
                             <a className="txt-muted" href="https://instagram.com/neelesh_kolhe/" rel="noreferrer" target="_blank"><p className="txt-muted">/neelesh_kolhe</p></a>
                         </div>
                     </div>
-                    <div style={{ display: "flex", flexDirection: "row", margin: "10px -2.5px" }}>
+                    <div>
                         <img style={{ height: "40px" }} src={`${github}`} alt="GitHub Logo" />
                         <div>
                             <p className="fw-bold">GitHub</p>
                             <a className="txt-muted" href="https://github.com/nilesh-kolhe/" rel="noreferrer" target="_blank"><p className="txt-muted">/Neelesh-Kolhe</p></a>
                         </div>
                     </div>
-                    <div style={{ display: "flex", flexDirection: "row", margin: "10px -2.5px" }}>
+                    <div>
                         <img style={{ height: "37px" }} src={`${email}`} alt="Email Logo" />
                         <div>
                             <p className="fw-bold">Rocketmail</p>
