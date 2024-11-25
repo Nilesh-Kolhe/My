@@ -4,7 +4,7 @@ const Experience = () => {
     return (
         <div className="experience-container">
             <div className='section-headline'>
-                Experience <i style={{marginLeft: "7px"}} className="bi bi-reception-4"></i>
+                Experience <i className="bi bi-reception-4"></i>
             </div>
             <hr />
             <div className="experience-section">

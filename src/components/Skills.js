@@ -24,7 +24,7 @@ const Skills = () => {
     return (
         <div className='skills-container'>
             <div className='section-headline'>
-                Skill Set
+                Skill Set <i sstyle={{marginLeft: "7px"}} className="bi bi-sliders2"></i>
             </div>
             <hr />
             <div className="skills-section">

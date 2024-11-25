@@ -4,6 +4,7 @@ import location from './Location.svg';
 import linkedin from './LinkedIn.svg';
 import instagram from './Instagram.svg';
 import twitter from './Twitter.svg';
+import github from './github-mark-white.svg';
 import email from './GMail.svg';
 
 const ReachMe = () => {
@@ -11,7 +12,7 @@ const ReachMe = () => {
         <div className='reachme-container'>
             <div>
                 <div className='section-headline'>
-                    Contact
+                    Contact <i class="bi bi-person-lines-fill"></i>
                 </div>
                 <hr />
             </div>
@@ -42,10 +43,10 @@ const ReachMe = () => {
                         </div>
                     </div>
                     <div style={{ display: "flex", flexDirection: "row", margin: "10px -2.5px" }}>
-                        <img style={{ height: "40px" }} src={`${twitter}`} alt="Twitter Logo" />
+                        <img style={{ height: "40px" }} src={`${github}`} alt="GitHub Logo" />
                         <div>
-                            <p className="fw-bold">Twitter</p>
-                            <a className="txt-muted" href="https://twitter.com/neelesh_kolhe/" rel="noreferrer" target="_blank"><p className="txt-muted">/NeeleshKolhe</p></a>
+                            <p className="fw-bold">GitHub</p>
+                            <a className="txt-muted" href="https://github.com/nilesh-kolhe/" rel="noreferrer" target="_blank"><p className="txt-muted">/Neelesh-Kolhe</p></a>
                         </div>
                     </div>
                     <div style={{ display: "flex", flexDirection: "row", margin: "10px -2.5px" }}>

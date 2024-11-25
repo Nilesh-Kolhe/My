@@ -11,7 +11,7 @@ const Home = () => {
             <img src={`${location}`} style={{ width: "100%", height: "375px" }} />
             <div className='image-text-container'>
                 <p className='image-container'>
-                    <img src={`${profile}`} style={{ width: "250px", height: "250px" }} />
+                    <img src={`${profile}`} style={{ width: "240px", height: "250px", borderRadius: "5px", border: "1px grey solid" }} />
                 </p>
                 <div className='text-container'>
                     <p style={{ fontSize: "large", fontWeight: "600", marginBottom: "0px" }}>Hi There &#128075; ! </p>
