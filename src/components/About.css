@@ -19,8 +19,8 @@
 }
 
 @media only screen and (min-width : 320px) and (max-width : 768px) {
-    .section-description {
-        width: 125%;
-        margin-left: -2px;
+    .about-container {
+        width: 100%;
+        padding: 0px 20px;
     }
 }

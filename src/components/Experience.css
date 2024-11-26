@@ -33,11 +33,16 @@
 }
 
 @media only screen and (min-width : 320px) and (max-width : 768px) {
-    .org {
+    /* .org {
         flex-direction: column;
-    }
+    } */
 
     .txt-muted {
         font-size: smaller;
+    }
+
+    .experience-container {
+        width: 100%;
+        padding: 0px 20px;
     }
 }

@@ -8,8 +8,7 @@
 .skills-section {
     display: flex;
     flex-direction: row;
-    /* background-image: url("../img2.jpg");
-    background-size: cover; */
+    column-gap: 10px;
 }
 
 .img-container {
@@ -17,9 +16,6 @@
     flex-direction: column;
     align-items: center;
     padding: 3px 0px;
-}
-
-#skills-container {
 }
 
 .img-container img.tech-logo:hover {
@@ -36,6 +32,15 @@
     padding: 3px;
 }
 
+.skills-bag {
+    font-size: smaller;
+    color: #fff;
+    margin: 10px -10px;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @media only screen and (min-width : 320px) and (max-width : 768px) {
     div.img-container img.tech-logo {
         width: 80px;
@@ -46,15 +51,17 @@
         margin-right: 0px;
     }
 
+    .skills-container {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
     .skills-section {
         flex-direction: column;
         row-gap: 20px;
-        /* background-image: url("../img2.jpg");
-        background-size: cover; */
     }
 
-    #skills-container {
-        column-gap: 20px;
+    .skills-bag {
+        column-gap: 5px;
     }
-
 }

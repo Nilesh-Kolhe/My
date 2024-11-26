@@ -14,10 +14,10 @@ const Home = () => {
                     <img id="profile-picture" src={`${profile}`} style={{ }} />
                 </p>
                 <div className='text-container'>
-                    <p className='sub-title'>Hi There &#128075; ! </p>
-                    <p className='sub-title'>This is </p>
-                    <p id="name">Neelesh Kolhe</p>
-                    <p id="desc">Coder &#128187;|Snapper &#128248;|Footballer &#9917;</p>
+                    <p className='sub-title'> Hi, </p>
+                    <p className='sub-title'> I am </p>
+                    <p id="name">Neelesh</p>
+                    <p id="desc">Coder &#128187; | Snapper &#128248; | Footballer &#9917;</p>
                     <a href="Resume.pdf" download="Full_Stack_Angular_React_Dot_Net_Dev.pdf">
                         <button style={{ borderStyle: 'none', borderRadius: "8px", height: "35px", width: "200px", fontSize: "small", fontWeight: 300 }}>
                             <img style={{ height: "15px", width: "20px", marginRight: "5px" }} src={`${download}`} alt="Download Icon" />

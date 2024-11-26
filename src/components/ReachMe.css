@@ -53,15 +53,19 @@ input {
     }
 
     .social-container {
-        display: flex;
-        flex-direction: column;
-
+        flex-wrap: wrap;
         & > div {
             display: flex;
+            margin: 10px 0px;
         }
 
-        & > *:not(:first-child) {
-            margin: 10px -10px;;
-        }
+        /* & > *:not(:first-child) {
+            margin: 10px 0px;;
+        } */
+    }
+
+    .reachme-container {
+        width: 100%;
+        padding: 0px 20px;
     }
 }

@@ -9,7 +9,6 @@
 .image-text-container {
     color: white;
     padding: 25px 0px;
-    width: 50%;
 }
 
 .image-container {
@@ -22,6 +21,7 @@
 
 .text-container {
     margin-left: 275px;
+    text-align: left;
 }
 
 hr {
@@ -41,8 +41,8 @@ hr {
 }
 
 .sub-title {
-    font-size: large;
-    font-weight: 600;
+    font-size: medium;
+    font-weight: 400;
     margin-bottom: 0px;
 }
 
@@ -54,7 +54,7 @@ hr {
 
 #desc {
     font-size: small;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
@@ -91,6 +91,7 @@ hr {
     .text-container {
         padding: 10px 0px;
         margin-left: 0px;
+        text-align: center;
     }
 
     #name {

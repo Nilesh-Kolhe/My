@@ -28,7 +28,7 @@ const Skills = () => {
             </div>
             <hr />
             <div className="skills-section">
-                <div id='skills-container' style={{ fontSize: "smaller", color: "#fff", margin: "10px -10px", backgroundColor: '#000', display: "flex", flexWrap: "wrap" }}>
+                <div className='skills-bag'>
                     <div className="img-container">
                         <img className="tech-logo" src={`${html}`} alt="HTML Logo" />
                         <p>HTML 5</p>
@@ -63,7 +63,7 @@ const Skills = () => {
                     </div>
                 </div>
 
-                <div id='skills-container' style={{ fontSize: "smaller", color: "#fff", margin: "10px -10px", backgroundColor: '#000', display: "flex", flexWrap: "wrap" }}>
+                <div className='skills-bag'>
                     <div className="img-container">
                         <img className="tech-logo" src={`${csharp}`} alt="C-Sharp Logo" />
                         <p>C Sharp</p>
@@ -86,7 +86,7 @@ const Skills = () => {
                     </div>
                 </div>
 
-                <div id='skills-container' style={{ fontSize: "smaller", color: "#fff", margin: "10px -10px", backgroundColor: '#000', display: "flex", flexWrap: "wrap" }}>
+                <div className='skills-bag'>
                     <div className="img-container">
                         <img className="tech-logo" src={`${vscode}`} alt="VS-Code Logo" />
                         <p> VS Code </p>
