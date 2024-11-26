@@ -17,6 +17,7 @@
   .App {
     background-position-x: 760px;
     background-position-y: -135px;
+    overflow-x: hidden;
   }
 }
 
