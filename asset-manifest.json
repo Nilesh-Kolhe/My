@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/My/static/css/main.aee22564.css",
-    "main.js": "/My/static/js/main.97d3b822.js",
+    "main.js": "/My/static/js/main.4b4b4e49.js",
     "static/js/787.128fc6e9.chunk.js": "/My/static/js/787.128fc6e9.chunk.js",
     "static/media/Nilesh_Kolhe.PNG": "/My/static/media/Nilesh_Kolhe.d19a35e9f10d97605976.PNG",
-    "static/media/img2.jpg": "/My/static/media/img2.4f64b27967e0cea366cd.jpg",
+    "static/media/img9.jpg": "/My/static/media/img9.fa90410a90d281179146.jpg",
     "static/media/bootstrap-icons.woff?": "/My/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/bootstrap-icons.woff2?": "/My/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "static/media/pune-univ-black.jpg": "/My/static/media/pune-univ-black.0e527e6773ee843614db.jpg",
@@ -39,11 +39,11 @@
     "static/media/VS-2013.svg": "/My/static/media/VS-2013.bf694f6526d78023011f1906cc8387cc.svg",
     "static/media/azure-devops.svg": "/My/static/media/azure-devops.e88b515dc44062c9fc0b92736d891ae1.svg",
     "main.aee22564.css.map": "/My/static/css/main.aee22564.css.map",
-    "main.97d3b822.js.map": "/My/static/js/main.97d3b822.js.map",
+    "main.4b4b4e49.js.map": "/My/static/js/main.4b4b4e49.js.map",
     "787.128fc6e9.chunk.js.map": "/My/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aee22564.css",
-    "static/js/main.97d3b822.js"
+    "static/js/main.4b4b4e49.js"
   ]
 }
