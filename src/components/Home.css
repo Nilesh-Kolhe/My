@@ -16,7 +16,7 @@
     position: absolute;
     border-radius: 5px;
     padding: 10px 10px;
-    top: 64vh;
+    top: 62vh;
     left: 325px;
 }
 
@@ -30,8 +30,8 @@ hr {
 }
 
 #cover-picture {
-    width: 180vh;
-    height: 75vh;
+    width: 178vh;
+    height: 73vh;
 }
 
 #profile-picture {
