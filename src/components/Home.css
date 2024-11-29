@@ -9,19 +9,23 @@
 
 .image-text-container {
     color: white;
-    padding: 15px 0px;
+    padding: 7px 0px;
+    display: flex;
+    column-gap: 15px;
 }
 
 .image-container {
-    position: absolute;
+    /* position: absolute; */
+    display: flex;
+    margin-top: -80px;
     border-radius: 5px;
     padding: 10px 10px;
-    top: 62vh;
-    left: 325px;
+    /* top: 62vh; */
+    /* left: 325px; */
 }
 
 .text-container {
-    margin-left: 180px;
+    /* margin-left: 180px; */
     text-align: left;
 }
 
@@ -30,8 +34,8 @@ hr {
 }
 
 #cover-picture {
-    width: 178vh;
-    height: 73vh;
+    width: 175vh;
+    height: 70vh;
 }
 
 #profile-picture {
