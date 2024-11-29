@@ -29,8 +29,8 @@ input {
 
 .social-container {
     display: flex;
-    flex-direction: row;
-    margin: 10px -10px;
+    flex-wrap: wrap;
+    margin: 10px 0px;
 
     & > div {
         display: flex;

@@ -43,7 +43,7 @@ const ReachMe = () => {
                         </div>
                     </div>
                     <div>
-                        <img style={{ height: "40px" }} src={`${github}`} alt="GitHub Logo" />
+                        <img style={{ height: "40px", width: "70px", padding: "0px 11px" }} src={`${github}`} alt="GitHub Logo" />
                         <div>
                             <p className="fw-bold">GitHub</p>
                             <a className="txt-muted" href="https://github.com/nilesh-kolhe/" rel="noreferrer" target="_blank"><p className="txt-muted">/Neelesh-Kolhe</p></a>
