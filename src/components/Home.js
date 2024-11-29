@@ -1,9 +1,8 @@
 import './Home.css';
 import download from './download-icon.svg';
-import location from './img2.jpg';
-// import location from './img1.jpg';
+// import location from './img2.jpg';
+import location from './img9.jpg';
 import profile from './Nilesh_Kolhe.PNG';
-// import profile from './img3.jpg';
 
 const Home = () => {
     return (
