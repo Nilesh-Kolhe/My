@@ -54,14 +54,6 @@ input {
 
     .social-container {
         flex-wrap: wrap;
-        & > div {
-            display: flex;
-            margin: 10px 0px;
-        }
-
-        /* & > *:not(:first-child) {
-            margin: 10px 0px;;
-        } */
     }
 
     .reachme-container {
