@@ -10,6 +10,7 @@ import { Navigate } from 'react-router-dom';
 import Skills from './components/Skills';
 import ReachMe from './components/ReachMe';
 import Experience from './components/Experience';
+import Edu from './components/Edu';
 
 const App = () => (
   <div className="App">
@@ -17,6 +18,7 @@ const App = () => (
     {/* <NavBar /> */}
     <Home />
     <About />
+    <Edu />
     <Experience />
     <Skills />
     <ReachMe />
