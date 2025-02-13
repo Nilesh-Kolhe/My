@@ -38,18 +38,16 @@ const posts = [
         'https://miro.medium.com/v2/resize:fill:176:176/1*wNX9bqs822LXkA3D0U2FTQ.png',
     },
   }
-  // More posts...
 ]
 
 const Blog = () => {
   return (
-    <div className="bg-black py-8 sm:py-8" style={{width: '50%'}}>
-      <div className="mx-auto max-w-7xl">
+    <div className="blog-container bg-black py-8 sm:py-8">
         <div className='section-headline'>
           Blogs <i class="bi bi-backpack-fill"></i>
         </div>
         <hr />
-        <div style={{overflowY: 'scroll'}} className="mx-auto h-300-px mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-10 sm:mt-4 sm:pt-4 lg:mx-0 lg:max-w-none">
+        <div className="article-container mx-auto h-300-px grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:mt-4 sm:pt-4">
           {posts.map((post) => (
             <article key={post.id} className='flex gap-x-4 align-items-center'>
               <div style={{flex:'max-content'}} className='w-100 h-100'>
@@ -91,7 +89,6 @@ const Blog = () => {
               </div>
             </article>
           ))}
-        </div>
       </div>
     </div>
   )
