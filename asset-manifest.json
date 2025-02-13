@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/My/static/css/main.94952879.css",
-    "main.js": "/My/static/js/main.841f018a.js",
-    "static/js/787.128fc6e9.chunk.js": "/My/static/js/787.128fc6e9.chunk.js",
+    "main.css": "/My/static/css/main.69f2f4d5.css",
+    "main.js": "/My/static/js/main.6f90e2d6.js",
+    "static/js/496.2537c0ad.chunk.js": "/My/static/js/496.2537c0ad.chunk.js",
     "static/media/Nilesh_Kolhe.PNG": "/My/static/media/Nilesh_Kolhe.d19a35e9f10d97605976.PNG",
     "static/media/img9.jpg": "/My/static/media/img9.fa90410a90d281179146.jpg",
     "static/media/bootstrap-icons.woff?": "/My/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
@@ -38,12 +38,12 @@
     "static/media/HTML.svg": "/My/static/media/HTML.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "static/media/VS-2013.svg": "/My/static/media/VS-2013.bf694f6526d78023011f1906cc8387cc.svg",
     "static/media/azure-devops.svg": "/My/static/media/azure-devops.e88b515dc44062c9fc0b92736d891ae1.svg",
-    "main.94952879.css.map": "/My/static/css/main.94952879.css.map",
-    "main.841f018a.js.map": "/My/static/js/main.841f018a.js.map",
-    "787.128fc6e9.chunk.js.map": "/My/static/js/787.128fc6e9.chunk.js.map"
+    "main.69f2f4d5.css.map": "/My/static/css/main.69f2f4d5.css.map",
+    "main.6f90e2d6.js.map": "/My/static/js/main.6f90e2d6.js.map",
+    "496.2537c0ad.chunk.js.map": "/My/static/js/496.2537c0ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.94952879.css",
-    "static/js/main.841f018a.js"
+    "static/css/main.69f2f4d5.css",
+    "static/js/main.6f90e2d6.js"
   ]
 }
