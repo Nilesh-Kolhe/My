@@ -18,8 +18,8 @@ const Home = () => {
                     <p className='sub-title'> I am </p>
                     <p id="name">Neelesh</p>
                     <p id="desc">Coder &#128187; | Snapper &#128248; | Mentor &#129496;&#127995;</p>
-                    <a href="Resume.pdf" download="Full_Stack_Angular_React_Dot_Net_Dev.pdf">
-                        <button style={{ borderStyle: 'none', borderRadius: "8px", height: "35px", width: "200px", fontSize: "small", fontWeight: 300 }}>
+                    <a className="social" href="Resume.pdf" download="Full_Stack_Angular_React_Dot_Net_Dev.pdf">
+                        <button style={{ backgroundColor: '#fff', color: '#000', display: 'flex', justifyContent: 'center', alignItems: 'center', borderStyle: 'none', borderRadius: "8px", height: "35px", width: "200px", fontSize: "small", fontWeight: 300 }}>
                             <img style={{ height: "15px", width: "20px", marginRight: "5px" }} src={`${download}`} alt="Download Icon" />
                             Download Resume
                         </button>

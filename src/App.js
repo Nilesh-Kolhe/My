@@ -11,6 +11,7 @@ import Skills from './components/Skills';
 import ReachMe from './components/ReachMe';
 import Experience from './components/Experience';
 import Edu from './components/Edu';
+import Blog from './components/Blog';
 
 const App = () => (
   <div className="App">
@@ -21,6 +22,7 @@ const App = () => (
     <Edu />
     <Experience />
     <Skills />
+    <Blog />
     <ReachMe />
     {/* <Education /> */}
     {/* <Contact /> */}

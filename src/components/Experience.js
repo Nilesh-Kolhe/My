@@ -10,10 +10,12 @@ const Experience = () => {
             <div className="experience-section">
                 <div className='org'>
                     <div className="org-name">
-                        Atos
-                        <p className="txt-muted" style={{ fontWeight: 'small', fontWeight: '400' }}>Consultant</p>
+                        CES
+                        <p className="txt-muted" style={{ fontWeight: 'small', fontWeight: '400' }}>
+                            Lead Software Technologist
+                        </p>
                     </div>
-                    <div className='year'>2021</div>
+                    <div className='year'>2024 -</div>
                 </div>
             </div>
         </div>
