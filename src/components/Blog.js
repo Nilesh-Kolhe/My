@@ -8,7 +8,7 @@ const posts = [
     imageUrl: 'https://miro.medium.com/v2/resize:fit:1400/format:webp/1*h6glzEV36j6DBz5Sp7WjLg.jpeg',
     description:
       'Angular continues to evolve, bringing powerful updates and optimisations that make development faster, more scalable, and developer-friendly. With Angular 17, we see significant improvements in performance, reactivity, and developer experience. This blog will explore the latest features, and how you can leverage them to enhance your projects.',
-    date: 'Feb 10, 2025',
+    date: 'Feb 7, 2025',
     datetime: '2020-03-16',
     category: { title: 'Angular', href: '#' },
     author: {
@@ -21,19 +21,19 @@ const posts = [
   },
   {
     id: 2,
-    title: 'Leveraging Higher-Order Components (HOCs) in React',
-    href: '#',
+    title: 'Leveraging Higher-Order Components (HOCs) in React',
+    href: 'https://medium.com/@Nilesh_Kolhe/leveraging-higher-order-components-hocs-in-react-29486deac2de',
     imageUrl:
-        'https://cdn-images-1.medium.com/max/1600/1*vlprKj0wh0zLhj4WXcdxqg.jpeg',
+        'https://miro.medium.com/v2/resize:fit:1400/1*vlprKj0wh0zLhj4WXcdxqg.jpeg',
     description:
       'Higher-Order Components (HOCs) are a powerful design pattern in React that helps in code reusability, abstraction, and logic sharing across multiple components. They allow us to encapsulate behaviour and inject additional functionality without modifying the original component.',
-    date: 'Feb 13, 2025',
+    date: 'Feb 14, 2025',
     datetime: '2020-03-16',
     category: { title: 'React', href: '#' },
     author: {
       name: 'Nilesh Kolhe',
       role: 'Software Developer',
-      href: '#',
+      href: 'https://medium.com/@Nilesh_Kolhe',
       imageUrl:
         'https://miro.medium.com/v2/resize:fill:176:176/1*wNX9bqs822LXkA3D0U2FTQ.png',
     },
@@ -50,10 +50,10 @@ const Blog = () => {
         <div className="article-container mx-auto h-300-px grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:mt-4 sm:pt-4">
           {posts.map((post) => (
             <article key={post.id} className='flex gap-x-4 align-items-center'>
-              <div style={{flex:'max-content'}} className='w-100 h-100'>
+              <div style={{flex:'0.80'}} className='w-100 h-100'>
                 <img alt="" src={post.imageUrl} className="w-100 h-100 rounded" />
               </div>
-              <div className="flex flex-col">
+              <div style={{flex:'1.20'}} className="flex flex-col">
                 <div className="flex items-center gap-x-4 text-xs">
                   <time dateTime={post.datetime} className="text-white">
                     {post.date}
