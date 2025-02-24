@@ -47,7 +47,7 @@ const Blog = () => {
           Blogs <i class="bi bi-backpack-fill"></i>
         </div>
         <hr />
-        <div className="article-container mx-auto h-300-px grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:mt-4 sm:pt-4">
+        <div className="article-container mx-auto h-300-px grid grid-cols-1 gap-x-8 gap-y-16 sm:mt-4 sm:pt-4">
           {posts.map((post) => (
             <article key={post.id} className='flex gap-x-4 align-items-center'>
               <div style={{flex:'0.80'}} className='w-100 h-100'>
