@@ -51,7 +51,7 @@ const Blog = () => {
           {posts.map((post) => (
             <article key={post.id} className='flex gap-x-4 align-items-center'>
               <div style={{flex:'0.80'}} className='w-100 h-100'>
-                <img alt="" src={post.imageUrl} className="w-100 h-100 rounded" style={{height: '300px !important'}}/>
+                <img alt="" src={post.imageUrl} className="rounded" style={{width: '320px', height: '300px'}}/>
               </div>
               <div style={{flex:'1.20'}} className="flex flex-col">
                 <div className="flex items-center gap-x-4 text-xs">
