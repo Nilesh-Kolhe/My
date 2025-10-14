@@ -38,11 +38,11 @@ input {
 
     & > div {
         display: flex;
-        margin: 10px -10px;
+        flex: 1;
     }
 
     & > *:not(:first-child) {
-        margin: 10px -2.5px;;
+        /* margin: 10px -2.5px;; */
     }
 }
 
@@ -52,7 +52,7 @@ input {
         background-position: right;
     }
 
-    div.contact-container>div.card {
+    div.contact-container > div.card {
         height: 70%;
     }
 

@@ -19,6 +19,11 @@ import redux from './redux.svg';
 import azuredevops from './azure-devops.svg';
 import jira from './Jira.svg';
 import resharper from './ReSharper.svg';
+import npm from './NPM.svg';
+import node from './Node.svg';
+import figma from './Figma.svg';
+import confluence from './Confluence.svg';
+import sqlserver from './SQLServer.svg';
 
 const Skills = () => {
     return (
@@ -50,6 +55,14 @@ const Skills = () => {
                         <p>Bootstrap</p>
                     </div>
                     <div className="img-container">
+                        <img className="tech-logo" src={`${npm}`} alt="NPM Logo" />
+                        <p>NPM</p>
+                    </div>
+                    <div className="img-container">
+                        <img className="tech-logo" src={`${node}`} alt="Node Logo" />
+                        <p>Node</p>
+                    </div>
+                    <div className="img-container">
                         <img className="tech-logo" src={`${redux}`} alt="Redux Logo" />
                         <p>Redux</p>
                     </div>
@@ -65,16 +78,20 @@ const Skills = () => {
 
                 <div className='skills-bag'>
                     <div className="img-container">
+                        <img className="tech-logo" src={`${sqlserver}`} alt="SQL Server Logo" />
+                        <p> SQL Server </p>
+                    </div>
+                    <div className="img-container">
                         <img className="tech-logo" src={`${csharp}`} alt="C-Sharp Logo" />
                         <p>C Sharp</p>
                     </div>
                     <div className="img-container">
                         <img className="tech-logo" src={`${dotnet}`} alt="Dot Net Logo" />
-                        <p>Dot Net</p>
+                        <p>.Net</p>
                     </div>
                     <div className="img-container">
                         <img className="tech-logo" src={`${dotnetcore}`} alt="Dot Net Core Logo" />
-                        <p>Dot Net Core</p>
+                        <p>.Net Core</p>
                     </div>
                     <div className="img-container">
                         <img className="tech-logo" src={`${azure}`} alt="Azure Logo" />
@@ -83,7 +100,7 @@ const Skills = () => {
                     <div className="img-container">
                         <img className="tech-logo" src={`${azuredevops}`} alt="Azure DevOps Logo" />
                         <p> Azure DevOps </p>
-                    </div>
+                    </div>                    
                 </div>
 
                 <div className='skills-bag'>
@@ -114,6 +131,14 @@ const Skills = () => {
                     <div className="img-container">
                         <img className="tech-logo" src={`${resharper}`} alt="ReSharper Logo" />
                         <p> ReSharper </p>
+                    </div>
+                    <div className="img-container">
+                        <img className="tech-logo" src={`${figma}`} alt="Figma Logo" />
+                        <p> Figma </p>
+                    </div>
+                    <div className="img-container">
+                        <img className="tech-logo" src={`${confluence}`} alt="Confluence Logo" />
+                        <p> Confluence </p>
                     </div>
                 </div>
             </div>
