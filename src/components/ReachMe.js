@@ -30,28 +30,28 @@ const ReachMe = () => {
                 <div className="social-container" >
                     <div>
                         <img style={{ height: "40px" }} src={`${linkedin}`} alt="LinkedIn Logo" />
-                        <div>
+                        <div className='social-link'>
                             <p className="fw-bold">LinkedIn</p>
                             <a className="social txt-muted" href="https://linkedin.com/in/nilesh-kolhe/" rel="noreferrer" target="_blank">/nilesh-kolhe</a>
                         </div>
                     </div>
                     <div>
                         <img style={{ height: "40px" }} src={`${instagram}`} alt="Instagram Logo" />
-                        <div>
+                        <div className='social-link'>
                             <p className="fw-bold">Instagram</p>
                             <a className="social txt-muted" href="https://instagram.com/neelesh_kolhe/" rel="noreferrer" target="_blank"><p className="txt-muted">/neelesh_kolhe</p></a>
                         </div>
                     </div>
                     <div>
                         <img style={{ height: "40px", width: "70px", padding: "0px 11px" }} src={`${github}`} alt="GitHub Logo" />
-                        <div>
+                        <div className='social-link'>
                             <p className="fw-bold">GitHub</p>
                             <a className="social txt-muted" href="https://github.com/nilesh-kolhe/" rel="noreferrer" target="_blank"><p className="txt-muted">/Neelesh-Kolhe</p></a>
                         </div>
                     </div>
                     <div>
                         <img style={{ height: "37px" }} src={`${email}`} alt="Email Logo" />
-                        <div>
+                        <div className='social-link'>
                             <p className="fw-bold">Rocketmail</p>
                             <a className="social txt-muted" href="mailto:kolhe.nilesh@rocketmail.com" rel="noreferrer" target="_blank"><p className="txt-muted">kolhe.nilesh</p></a>
                         </div>
