@@ -1,60 +1,135 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "bootstrap/dist/js/bootstrap.js";
-import './NavBar.css';
-import image from './logo-svg.svg';
-import { useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { FiMenu, FiX, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
+import { SiMedium } from 'react-icons/si';
+import './Navbar.css';
 
-const NavBar = () => {
-    const baseUrl = "https://nilesh-kolhe.github.io/My/#";
-    // const baseUrl = "http://localhost:3000"; // For Local
-    const location = useLocation();  
-    console.log('Current Location: ', location.pathname);
+const Navbar = ({ activeSection, setActiveSection }) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    document.addEventListener("click", function (event) {
-        var navbar = document.querySelector("nav div.container-fluid div#navbar");
-        var _opened = navbar.classList.contains("show");
-        if (_opened === true) {
-            navbar.classList.remove('show');
-            navbar.classList.add('hide');
-        }
-    });
+  const toggleMenu = () => setIsOpen(!isOpen);
 
-    return (
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
-                <div className="container-fluid">
-                    <a className="navbar-brand text-black" href={`${baseUrl}/home`}>
-                        <img src={`${image}`} alt="Logo" />
-                    </a>
-                    <button className="navbar-toggler collapsed"
-                        style={{ backgroundColor: "#fff" }}
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbar"
-                        aria-controls="navbar">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
+  const navItems = [
+    { label: 'Home', href: '#home' },
+    { label: 'About', href: '#about' },
+    { label: 'Experience', href: '#experience' },
+    { label: 'My Work', href: '#projects' },
+    { label: 'Gallery', href: '#photography' },
+    { label: 'Reach Me', href: '#contact' },
+  ];
 
-                    <div className="navbar-collapse collapse" id="navbar">
-                        <ul className="navbar-nav mb-lg-0 justify-content-lg-end" style={{ width: "100%" }}>
-                            <li className="nav-item">
-                                <a className={location.pathname.includes("home") ? "nav-link current" : "nav-link"} style={{ color: "black", fontWeight: "700", paddingRight: "7px" }} aria-current="page" href={`${baseUrl}/home`}>Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className={location.pathname.includes("education") ? "nav-link current" : "nav-link"} style={{ color: "black", fontWeight: "700", paddingRight: "7px" }} href={`${baseUrl}/education`}>Education</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className={location.pathname.includes("work") ? "nav-link current" : "nav-link"} style={{ color: "black", fontWeight: "700", paddingRight: "7px" }} href={`${baseUrl}/work`}>Work</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className={location.pathname.includes("contact") ? "nav-link current" : "nav-link"} style={{ color: "black", fontWeight: "700", paddingRight: "7px" }} href={`${baseUrl}/contact`}>Contact Me</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+  const socialLinks = [
+    { icon: FiGithub, url: 'https://github.com/nilesh-kolhe', label: 'GitHub' },
+    { icon: FiLinkedin, url: 'https://linkedin.com/in/nilesh-kolhe', label: 'LinkedIn' },
+    { icon: SiMedium, url: 'https://medium.com/@nilesh_kolhe', label: 'Medium' },
+    { icon: FiMail, url: 'mailto:kolhe.nilesh@rocketmail.com', label: 'Email' },
+  ];
+
+  return (
+    <nav className="navbar">
+      <motion.div
+        className="nav-container container"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <motion.a
+          href="#home"
+          className="nav-logo"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => setActiveSection('home')}
+        >
+          NK
+        </motion.a>
+
+        {/* Desktop Menu */}
+        <div className="nav-menu">
+          {navItems.map((item, index) => (
+            <motion.a
+              key={index}
+              href={item.href}
+              className="nav-link"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ color: 'var(--accent-blue)' }}
+              onClick={() => {
+                setActiveSection(item.href.substring(1));
+                setIsOpen(false);
+              }}
+            >
+              {item.label}
+            </motion.a>
+          ))}
         </div>
-    );
-}
 
-export default NavBar;
+        {/* Social Icons */}
+        <div className="nav-social">
+          {socialLinks.map((link, index) => {
+            const Icon = link.icon;
+            return (
+              <motion.a
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+                whileHover={{ scale: 1.2, color: 'var(--accent-blue)' }}
+                whileTap={{ scale: 0.9 }}
+                title={link.label}
+              >
+                <Icon size={20} />
+              </motion.a>
+            );
+          })}
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button className="hamburger" onClick={toggleMenu} aria-label="Toggle menu">
+          {isOpen ? <FiX size={28} /> : <FiMenu size={28} />}
+        </button>
+      </motion.div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <motion.div
+          className="mobile-menu"
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: 'auto' }}
+          exit={{ opacity: 0, height: 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          {navItems.map((item, index) => (
+            <motion.a
+              key={index}
+              href={item.href}
+              className="mobile-link"
+              onClick={(e) => {
+                e.preventDefault();
+                setActiveSection(item.href.substring(1));
+                setIsOpen(false);
+                // Delay scroll until menu collapse animation finishes
+                setTimeout(() => {
+                  const target = document.querySelector(item.href);
+                  if (target) {
+                    const navHeight = document.querySelector('.navbar').offsetHeight;
+                    const targetTop = target.getBoundingClientRect().top + window.scrollY - navHeight;
+                    window.scrollTo({ top: targetTop, behavior: 'smooth' });
+                  }
+                }, 350);
+              }}
+              initial={{ x: -20, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: index * 0.05 }}
+            >
+              {item.label}
+            </motion.a>
+          ))}
+        </motion.div>
+      )}
+    </nav>
+  );
+};
+
+export default Navbar;
