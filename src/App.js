@@ -1,27 +1,35 @@
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
-import NavBar from './components/NavBar';
-import Home from './components/Home';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Photography from './components/Photography';
 import Contact from './components/Contact';
-import Education from './components/Education';
-import Work from './components/Work';
-import { Navigate } from 'react-router-dom';
+import Footer from './components/Footer';
+import './App.css';
 
 function App() {
+  const [activeSection, setActiveSection] = useState('home');
+
   return (
     <div className="App">
-      <Router>
-        <NavBar />
-        <Routes>
-        <Route path="/" element={<Navigate to="home" />} />
-          {/* <Route path="/My" element={<Navigate to="/home" />} /> Add this and / before route for Local dev and Import Browser Router*/}
-          <Route path="home" element={<Home />} />
-          <Route path='education' element={<Education />} />
-          <Route path='work' element={<Work />} />
-          <Route path='contact' element={<Contact />} />
-        </Routes>
-      </Router >
-    </div >
+      <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
+      <motion.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Hero id="home" setActiveSection={setActiveSection} />
+        <About id="about" />
+        <Experience id="experience" />
+        <Projects id="projects" />
+        <Photography id="photography" />
+        <Contact id="contact" />
+        <Footer />
+      </motion.main>
+    </div>
   );
 }
 

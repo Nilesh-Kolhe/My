@@ -1,60 +1,225 @@
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin, FiSend } from 'react-icons/fi';
+import { SiMedium } from 'react-icons/si';
 import './Contact.css';
-import location from './Location.svg';
-import linkedin from './LinkedIn.svg';
-import instagram from './Instagram.svg';
-import twitter from './Twitter.svg';
-import email from './GMail.svg';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [submitted, setSubmitted] = useState(false);
 
-    return (
-        <div className="contact-container">
-            <div className="card" style={{ display: "flex", borderStyle: "none", width: "70%" }}>
-                <div className="body-container" style={{ display: "flex", flexDirection: "column", alignItems: "center", backgroundColor: "whitesmoke", color: "#000" }}>
-                    <div style={{ display: "flex", flexDirection: "column" }}>
-                        <div className="img-container" style={{ flexDirection: "row", margin: "25px 5px" }}>
-                            <img style={{ height: "60px" }} src={`${location}`} alt="Location Logo" />
-                            <div>
-                                <p className="fw-bolder">Location</p>
-                                <p className="text-muted">Punawale</p>
-                                <p className="text-muted">Pune, Maharashtra, India - 411033</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="social-container" style={{ display: "flex" }}>
-                        <div className="img-container" style={{ flexDirection: "row", margin: "25px 5px" }}>
-                            <img style={{ height: "40px" }} src={`${linkedin}`} alt="LinkedIn Logo" />
-                            <div>
-                                <p className="fw-bolder">LinkedIn</p>
-                                <a className="text-muted" href="https://www.linkedin.com/in/nilesh-kolhe/" rel="noreferrer" target="_blank">/nilesh-kolhe</a>
-                            </div>
-                        </div>
-                        <div className="img-container" style={{ flexDirection: "row", margin: "25px 5px" }}>
-                            <img style={{ height: "40px" }} src={`${instagram}`} alt="Instagram Logo" />
-                            <div>
-                                <p className="fw-bolder">Instagram</p>
-                                <a className="text-muted" href="https://instagram.com/neelesh_kolhe/" rel="noreferrer" target="_blank"><p className="text-muted">/neelesh_kolhe</p></a>
-                            </div>
-                        </div>
-                        <div className="img-container" style={{ flexDirection: "row", margin: "25px 5px" }}>
-                            <img style={{ height: "40px" }} src={`${twitter}`} alt="Twitter Logo" />
-                            <div>
-                                <p className="fw-bolder">Twitter</p>
-                                <a className="text-muted" href="https://instagram.com/neelesh_kolhe/" rel="noreferrer" target="_blank"><p className="text-muted">/NeeleshKolhe</p></a>
-                            </div>
-                        </div>
-                        <div className="img-container" style={{ flexDirection: "row", margin: "25px 5px" }}>
-                            <img style={{ height: "37px" }} src={`${email}`} alt="Email Logo" />
-                            <div>
-                                <p className="fw-bolder">Rocketmail</p>
-                                <a className="text-muted" href="mailto:kolhe.nilesh@rocketmail.com" rel="noreferrer" target="_blank"><p className="text-muted">kolhe.nilesh</p></a>
-                            </div>
-                        </div>
-                    </div>
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission here
+    console.log(formData);
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 3000);
+    setFormData({ name: '', email: '', message: '' });
+  };
+
+  return (
+    <section className="contact" id="contact">
+      <div className="contact::after"></div>
+
+      <div className="container">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="section-title">Get In Touch</h2>
+
+          <p className="contact-intro">
+            Whether you have a question or just want to say hi, feel free to get in touch !
+          </p>
+
+          <div className="contact-content">
+            {/* Contact Info */}
+            <div className="contact-info-section">
+              <h3>Contact Information</h3>
+
+              <div className="contact-cards">
+                <motion.a
+                  href="mailto:kolhe.nilesh@rocketmail.com"
+                  className="contact-card"
+                  whileHover={{ y: -5 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <div className="card-icon">
+                    <FiMail size={24} />
+                  </div>
+                  <div className="card-content">
+                    <h4>Email</h4>
+                    <p>kolhe.nilesh@rocketmail.com</p>
+                  </div>
+                </motion.a>
+
+                <motion.a
+                  href="tel:+919673973040"
+                  className="contact-card"
+                  whileHover={{ y: -5 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <div className="card-icon">
+                    <FiPhone size={24} />
+                  </div>
+                  <div className="card-content">
+                    <h4>Phone</h4>
+                    <p>+91 967 397 3040</p>
+                  </div>
+                </motion.a>
+
+                <motion.div
+                  className="contact-card"
+                  whileHover={{ y: -5 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <div className="card-icon">
+                    <FiMapPin size={24} />
+                  </div>
+                  <div className="card-content">
+                    <h4>Location</h4>
+                    <p>Pune, India</p>
+                  </div>
+                </motion.div>
+              </div>
+
+              <div className="social-section">
+                <h4>Follow Me</h4>
+                <div className="social-icons">
+                  <motion.a
+                    href="https://github.com/nilesh-kolhe"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-link"
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                    title="GitHub"
+                  >
+                    <FiGithub size={20} />
+                  </motion.a>
+                  <motion.a
+                    href="https://linkedin.com/in/nilesh-kolhe"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-link"
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                    title="LinkedIn"
+                  >
+                    <FiLinkedin size={20} />
+                  </motion.a>
+                  <motion.a
+                    href="https://medium.com/@nilesh_kolhe"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-link"
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                    title="Medium"
+                  >
+                    <SiMedium size={20} />
+                  </motion.a>
+                  <motion.a
+                    href="https://nileshkolhe.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-link"
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                    title="Website"
+                  >
+                    <span>🌐</span>
+                  </motion.a>
                 </div>
+              </div>
             </div>
-        </div>
-    );
-}
+
+            {/* Contact Form */}
+            <motion.form
+              className="contact-form"
+              onSubmit={handleSubmit}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <h3>Send a Message</h3>
+
+              <div className="form-group">
+                <label htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Your message..."
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <motion.button
+                type="submit"
+                className="btn btn-primary submit-btn"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <FiSend size={20} />
+                Send Message
+              </motion.button>
+
+              {submitted && (
+                <motion.div
+                  className="success-message"
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                >
+                  Thank you for your message! I'll get back to you soon.
+                </motion.div>
+              )}
+            </motion.form>
+          </div>
+
+          <div className="contact-footer">
+            <p>Open to relocation and visa sponsorship</p>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
 
 export default Contact;

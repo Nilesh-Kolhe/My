@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Dark background with rounded corners -->
+  <rect width="32" height="32" rx="7" fill="#0a0a0a"/>
+  <!-- Subtle cyan border -->
+  <rect width="32" height="32" rx="7" fill="none" stroke="#00d9ff" stroke-width="1.2" opacity="0.35"/>
+  <!-- NK initials in brand red -->
+  <text
+    x="16"
+    y="22"
+    font-family="'Poppins', Arial, sans-serif"
+    font-weight="800"
+    font-size="14"
+    fill="#ff4444"
+    text-anchor="middle"
+    letter-spacing="-0.5"
+  >NK</text>
+</svg>
