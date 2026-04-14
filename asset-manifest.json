@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.fae39cd4.css",
-    "main.js": "/static/js/main.21b5d9dd.js",
-    "static/js/453.5c6ddc6a.chunk.js": "/static/js/453.5c6ddc6a.chunk.js",
-    "static/media/IMG_9738.jpeg": "/static/media/IMG_9738.24bb5eff3fb1f28cec53.jpeg",
-    "static/media/IMG_0507.JPG": "/static/media/IMG_0507.3acacca37fa2c503e154.JPG",
-    "static/media/IMG_3567.jpeg": "/static/media/IMG_3567.7ae755b1158d8d94d997.jpeg",
-    "static/media/IMG_2398.jpeg": "/static/media/IMG_2398.8fcd7371e81e32e8dd90.jpeg",
-    "static/media/IMG_4961.jpeg": "/static/media/IMG_4961.3190349bc24f5e722ade.jpeg",
-    "static/media/IMG_0343.jpeg": "/static/media/IMG_0343.1376789f8907b46a8b20.jpeg",
-    "static/media/IMG_20260402_182240559_HDR~2.jpg": "/static/media/IMG_20260402_182240559_HDR~2.167e9fc34ca7a54ff5f9.jpg",
-    "static/media/IMG_0346.jpeg": "/static/media/IMG_0346.d74b7f63de5c101d9858.jpeg",
-    "static/media/IMG_3881.JPG": "/static/media/IMG_3881.52d6a9548c2cd69a5e97.JPG",
-    "static/media/IMG_6824.JPG": "/static/media/IMG_6824.95881bee873c4c939d87.JPG",
-    "static/media/Photo.jpeg": "/static/media/Photo.e2d8333e3b92d7ab8fb3.jpeg",
-    "static/media/Fullstack-Developer-Nilesh-Kolhe.pdf": "/static/media/Fullstack-Developer-Nilesh-Kolhe.3f4bda4cd8d2f12df983.pdf",
-    "index.html": "/index.html",
-    "main.fae39cd4.css.map": "/static/css/main.fae39cd4.css.map",
-    "main.21b5d9dd.js.map": "/static/js/main.21b5d9dd.js.map",
-    "453.5c6ddc6a.chunk.js.map": "/static/js/453.5c6ddc6a.chunk.js.map"
+    "main.css": "/My/static/css/main.fae39cd4.css",
+    "main.js": "/My/static/js/main.cfa18ee2.js",
+    "static/js/453.5c6ddc6a.chunk.js": "/My/static/js/453.5c6ddc6a.chunk.js",
+    "static/media/IMG_9738.jpeg": "/My/static/media/IMG_9738.24bb5eff3fb1f28cec53.jpeg",
+    "static/media/IMG_0507.JPG": "/My/static/media/IMG_0507.3acacca37fa2c503e154.JPG",
+    "static/media/IMG_3567.jpeg": "/My/static/media/IMG_3567.7ae755b1158d8d94d997.jpeg",
+    "static/media/IMG_2398.jpeg": "/My/static/media/IMG_2398.8fcd7371e81e32e8dd90.jpeg",
+    "static/media/IMG_4961.jpeg": "/My/static/media/IMG_4961.3190349bc24f5e722ade.jpeg",
+    "static/media/IMG_0343.jpeg": "/My/static/media/IMG_0343.1376789f8907b46a8b20.jpeg",
+    "static/media/IMG_20260402_182240559_HDR~2.jpg": "/My/static/media/IMG_20260402_182240559_HDR~2.167e9fc34ca7a54ff5f9.jpg",
+    "static/media/IMG_0346.jpeg": "/My/static/media/IMG_0346.d74b7f63de5c101d9858.jpeg",
+    "static/media/IMG_3881.JPG": "/My/static/media/IMG_3881.52d6a9548c2cd69a5e97.JPG",
+    "static/media/IMG_6824.JPG": "/My/static/media/IMG_6824.95881bee873c4c939d87.JPG",
+    "static/media/Photo.jpeg": "/My/static/media/Photo.e2d8333e3b92d7ab8fb3.jpeg",
+    "static/media/Fullstack-Developer-Nilesh-Kolhe.pdf": "/My/static/media/Fullstack-Developer-Nilesh-Kolhe.3f4bda4cd8d2f12df983.pdf",
+    "index.html": "/My/index.html",
+    "main.fae39cd4.css.map": "/My/static/css/main.fae39cd4.css.map",
+    "main.cfa18ee2.js.map": "/My/static/js/main.cfa18ee2.js.map",
+    "453.5c6ddc6a.chunk.js.map": "/My/static/js/453.5c6ddc6a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fae39cd4.css",
-    "static/js/main.21b5d9dd.js"
+    "static/js/main.cfa18ee2.js"
   ]
 }
