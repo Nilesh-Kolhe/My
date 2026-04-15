@@ -333,8 +333,8 @@
   }
 }
 
-/* Responsive — mobile */
-@media (max-width: 480px) {
+/* Responsive — mobile phones (iPhone, Motorola Edge 60 Fusion ~393-412px, all Android ≤600px) */
+@media (max-width: 600px) {
   /* Hide prev/next buttons — swipe handles navigation */
   .carousel-button {
     display: none;
@@ -350,15 +350,7 @@
     padding: 16px 4px;
   }
 
-  /* Each photo ~85% of screen width, square-ish aspect */
-  .gallery-item {
-    -webkit-flex: 0 0 78vw;
-    flex: 0 0 78vw;
-    width: 78vw;
-    height: 100vw;
-  }
-
-  /* Always show the "View" tap hint on mobile — no hover on touch */
+  /* Always show the "View" tap hint — no hover on touch */
   .photo-overlay {
     opacity: 0.55;
     pointer-events: auto;
@@ -367,7 +359,6 @@
     backdrop-filter: blur(2px);
   }
 
-  /* Tap darkens the overlay for feedback */
   .gallery-item:active .photo-overlay {
     opacity: 0.85;
   }
@@ -377,7 +368,6 @@
     padding: 10px 20px;
   }
 
-  /* Lightbox: full-width image on mobile */
   .lightbox-image {
     max-width: 95vw;
     max-height: 65vh;
@@ -390,5 +380,25 @@
   .nav-btn {
     width: 38px;
     height: 38px;
+  }
+}
+
+/* Photo sizing — compact phones ≤480px (iPhone SE, standard iPhones) */
+@media (max-width: 480px) {
+  .gallery-item {
+    -webkit-flex: 0 0 78vw;
+    flex: 0 0 78vw;
+    width: 78vw;
+    height: 90vw;
+  }
+}
+
+/* Photo sizing — Motorola Edge 60 Fusion & larger Android phones (481px–600px) */
+@media (min-width: 481px) and (max-width: 600px) {
+  .gallery-item {
+    -webkit-flex: 0 0 75vw;
+    flex: 0 0 75vw;
+    width: 75vw;
+    height: 88vw;
   }
 }
