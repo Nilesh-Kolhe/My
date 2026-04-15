@@ -1,71 +1,117 @@
-# Getting Started with Create React App
+# Nilesh Kolhe — Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive personal portfolio website built with React and Framer Motion. Live at [nileshkolhe.com](https://nileshkolhe.com).
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Sections
 
-### `npm start`
+- **Hero** — Animated typewriter cycling through titles: Software Dev, AI Enthusiast, Tech Innovator
+- **About** — Profile photo, personal bio, and skills overview
+- **Experience** — Work history with collapsible detail view
+- **My Work** — Featured projects with tech stack and links
+- **Gallery** — Photography carousel with lightbox viewer
+- **Contact** — Reach out form and social links
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+| Layer | Technology |
+|---|---|
+| Framework | React 19 |
+| Animations | Framer Motion 12 |
+| Icons | React Icons 5 |
+| Deployment | GitHub Pages via `gh-pages` |
+| Hosting | Custom domain — nileshkolhe.com |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
+- Node.js 18+
+- npm
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Install dependencies
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Run locally
+```bash
+npm start
+```
+Opens at [http://localhost:3000](http://localhost:3000).
 
-### `npm run eject`
+### Build for production
+```bash
+npm run build
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Deploy to GitHub Pages
+```bash
+npm run deploy
+```
+Builds the app and pushes to the `gh-pages` branch. The site goes live at [nileshkolhe.com](https://nileshkolhe.com) within a few minutes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+src/
+├── assets/
+│   ├── gallery/        # Photography section images
+│   └── profile/        # About section profile photo
+├── components/
+│   ├── Navbar.js       # Responsive nav with mobile hamburger menu
+│   ├── Hero.js         # Typewriter title animation
+│   ├── About.js        # Bio and skills
+│   ├── Experience.js   # Work history
+│   ├── Projects.js     # Featured work
+│   ├── Photography.js  # Image carousel with lightbox
+│   ├── Contact.js      # Contact section
+│   └── Footer.js       # Footer with social links
+├── App.js
+└── index.js
+public/
+└── CNAME               # Custom domain config for GitHub Pages
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The site is deployed to GitHub Pages with a custom domain:
 
-### Code Splitting
+1. `public/CNAME` contains `nileshkolhe.com`
+2. `homepage` in `package.json` is set to `https://nileshkolhe.com`
+3. GoDaddy DNS has four A records pointing to GitHub Pages IPs:
+   ```
+   185.199.108.153
+   185.199.109.153
+   185.199.110.153
+   185.199.111.153
+   ```
+4. A `www` CNAME record points to `nilesh-kolhe.github.io`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Browser Compatibility
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Tested and working on:
+- Chrome (desktop & Android)
+- Safari (desktop & iPhone)
+- Firefox
+- Motorola Edge 60 Fusion (Android Chrome)
 
-### Making a Progressive Web App
+Safari-specific fixes applied for flexbox gallery rendering and `-webkit-backdrop-filter`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is personal and not open for reuse without permission.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
+&copy; 2026 Nilesh Kolhe. All rights reserved.
