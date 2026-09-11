@@ -33,13 +33,14 @@ function useScrollProgress() {
   return { progress, y };
 }
 
-function MagneticButton({ children, className = "", href, onClick, accent = "violet" }: { children: React.ReactNode; className?: string; href?: string; onClick?: () => void; accent?: "violet" | "cyan" }) {
+function MagneticButton({ children, className = "", href, download, onClick, accent = "violet" }: { children: React.ReactNode; className?: string; href?: string; download?: boolean; onClick?: () => void; accent?: "violet" | "cyan" }) {
   const [pos, setPos] = useState({ x: 0, y: 0 });
   const [hover, setHover] = useState(false);
   const glow = accent === "cyan" ? "rgba(6,255,165,0.45)" : "rgba(139,92,246,0.45)";
   return (
     <a
       href={href}
+      download={download}
       target={href?.startsWith("http") ? "_blank" : undefined}
       rel="noreferrer"
       onClick={onClick as any}
@@ -303,7 +304,7 @@ export default function App() {
                 View Work <span className="w-7 h-7 rounded-full bg-black text-white grid place-items-center text-[12px] group-hover:rotate-45 transition-transform duration-300">↗</span>
               </span>
             </MagneticButton>
-            <MagneticButton accent="cyan" onClick={() => { setToast("CV download • add your PDF to /public/cv.pdf"); setTimeout(() => setToast(null), 2500); }} className="h-[52px] px-8 rounded-full bg-white/[0.06] border border-white/15 backdrop-blur-xl text-[14px] font-medium hover:bg-white/[0.1] transition cursor-pointer">
+            <MagneticButton href="/Lead-Fullstack-Engineer.pdf" download accent="cyan" className="h-[52px] px-8 rounded-full bg-white/[0.06] border border-white/15 backdrop-blur-xl text-[14px] font-medium hover:bg-white/[0.1] transition cursor-pointer">
               Download CV
             </MagneticButton>
           </div>
