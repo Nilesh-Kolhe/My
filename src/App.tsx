@@ -255,13 +255,16 @@ export default function App() {
               <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_10px_#10b981]" />
               <span className="mono text-[11px] tracking-wide">PUNE • {new Date().toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' })} IST </span>
             </div>
-            <a href="https://linkedin.com/in/nilesh-kolhe/recent-activity/all/" target="_blank" rel="noreferrer" aria-label="Latest LinkedIn post" className="md:hidden relative w-11 h-11 rounded-full bg-gradient-to-br from-violet-600 to-cyan-500 border border-white/10 grid place-items-center text-[12px] font-bold shadow-[0_0_18px_rgba(6,255,165,0.3)]">
+            <a href="https://linkedin.com/in/nilesh-kolhe/recent-activity/all/" target="_blank" rel="noreferrer" aria-label="Latest LinkedIn post" className="md:hidden relative w-11 h-11 rounded-full bg-gradient-to-br from-violet-600 to-emerald-600 border border-white/10 grid place-items-center text-[12px] font-bold shadow-[0_0_18px_rgba(6,255,165,0.3)]">
               in
-              <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-white ring-2 ring-[#050507] animate-pulse" />
+              <span className="absolute -top-0.5 -right-0.5 w-3 h-3">
+                <span className="absolute inset-0 rounded-full bg-[#39FF14] animate-ping" />
+                <span className="absolute inset-0 rounded-full bg-[#39FF14] ring-2 ring-[#050507] shadow-[0_0_10px_3px_#39FF14]" />
+              </span>
             </a>
             <button onClick={() => setMobileMenu(!mobileMenu)} aria-label={mobileMenu ? "Close menu" : "Open menu"} aria-expanded={mobileMenu} className="md:hidden w-11 h-11 rounded-full bg-white/[0.08] border border-white/10 grid place-items-center text-[18px]">{mobileMenu ? "✕" : "≡"}</button>
             <MagneticButton href="https://linkedin.com/in/nilesh-kolhe/recent-activity/all/" accent="cyan" className="hidden md:inline-flex items-center gap-2 h-9 px-4 rounded-full bg-gradient-to-r from-violet-600 to-cyan-500 text-white text-[12px] font-semibold tracking-wide shadow-[0_0_20px_rgba(6,255,165,0.25)]">
-              <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+              <span className="w-1.5 h-1.5 rounded-full bg-white" />
                 Featured ↗
             </MagneticButton>
             <MagneticButton href="#reach-me" accent="violet" className="hidden md:inline-flex h-9 px-5 rounded-full bg-white text-black text-[13px] font-semibold tracking-wide">Let's Talk</MagneticButton>
@@ -284,7 +287,7 @@ export default function App() {
               ))}
             </div>
             <div className="mt-4 flex items-center gap-2">
-              <MagneticButton href="https://linkedin.com/in/nilesh-kolhe/recent-activity/all/" accent="cyan" className="flex-1 inline-flex items-center justify-center gap-2 h-9 rounded-full bg-gradient-to-r from-violet-600 to-cyan-500 text-white text-[12px] font-semibold tracking-wide">
+              <MagneticButton href="https://linkedin.com/in/nilesh-kolhe/recent-activity/all/" accent="cyan" className="flex-1 inline-flex items-center justify-center gap-2 h-9 rounded-full bg-gradient-to-r from-violet-600 to-emerald-600 text-white text-[12px] font-semibold tracking-wide">
                 <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
                 Featured ↗
               </MagneticButton>
