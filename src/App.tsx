@@ -256,6 +256,10 @@ export default function App() {
               <span className="mono text-[11px] tracking-wide">PUNE • {new Date().toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' })} IST </span>
             </div>
             <button onClick={() => setMobileMenu(!mobileMenu)} className="md:hidden w-9 h-9 rounded-full bg-white/[0.08] border border-white/10 grid place-items-center">≡</button>
+            <MagneticButton href="https://linkedin.com/in/nilesh-kolhe/recent-activity/all/" accent="cyan" className="hidden md:inline-flex items-center gap-2 h-9 px-4 rounded-full bg-gradient-to-r from-violet-600 to-cyan-500 text-white text-[12px] font-semibold tracking-wide shadow-[0_0_20px_rgba(6,255,165,0.25)]">
+              <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                Featured ↗
+            </MagneticButton>
             <MagneticButton href="#reach-me" accent="violet" className="hidden md:inline-flex h-9 px-5 rounded-full bg-white text-black text-[13px] font-semibold tracking-wide">Let's Talk</MagneticButton>
           </div>
         </div>
@@ -266,6 +270,10 @@ export default function App() {
             {["About", "Experience", "Work", "Reach Me"].map((l) => (
               <a key={l} href={`#${l.toLowerCase().replace(" ", "-")}`} onClick={() => setMobileMenu(false)} className="block text-lg tracking-wide">{l}</a>
             ))}
+            <a href="https://linkedin.com/in/nilesh-kolhe/recent-activity/all/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-lg tracking-wide bg-gradient-to-r from-violet-400 to-cyan-300 bg-clip-text text-transparent font-semibold">
+              <span className="w-1.5 h-1.5 rounded-full bg-cyan-300 animate-pulse" />
+                Featured ↗
+            </a>
           </div>
         )}
       </nav>
