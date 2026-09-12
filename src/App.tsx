@@ -304,7 +304,9 @@ export default function App() {
         <div className="mx-auto max-w-[1280px] px-6 md:px-8 w-full flex flex-col items-center text-center will-change-transform" style={{ transform: `translateY(${heroParallax}px)` }}>
           <div className={`inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/[0.07] border border-white/[0.12] backdrop-blur-xl shadow-[0_0_30px_rgba(139,92,246,0.15)] transition-all duration-[800ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${heroMounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`} style={{ transitionDelay: "100ms" }}>
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_10px_#10b981]" />
-            <span className="mono text-[11px] tracking-[0.18em] uppercase">Available • Within 30 Days</span>
+            <span className="mono text-[11px] tracking-[0.18em] uppercase">Available
+              {/* • Within 30 Days */}
+              </span>
           </div>
 
           <div className="mt-12 leading-[0.86] tracking-[-0.05em] max-w-full">
