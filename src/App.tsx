@@ -267,7 +267,7 @@ export default function App() {
 
           <div className="mt-12 leading-[0.86] tracking-[-0.05em] max-w-full">
             <div className={`block text-[13px] md:text-[15px] tracking-[0.28em] uppercase mb-8 font-medium transition-all duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${heroMounted ? "opacity-[0.55] translate-y-0" : "opacity-0 translate-y-[80px]"}`} style={{ transitionDelay: "140ms" }}>
-              Lead Full Stack Engineer • 12 Years Experience
+              Lead Full Stack Engineer
             </div>
             {/* HERO NAME WITH DELIBERATE BREATHING SPACE */}
             <h1 className="flex flex-col items-center">
