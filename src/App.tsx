@@ -92,7 +92,20 @@ export default function App() {
   const { progress: scrollProgress } = useScrollProgress();
   const [aboutProg, setAboutProg] = useState(0);
   const [heroMounted, setHeroMounted] = useState(false);
+  const [visitCount, setVisitCount] = useState<number | null>(null);
   useEffect(() => { const t = setTimeout(() => setHeroMounted(true), 80); return () => clearTimeout(t); }, []);
+  useEffect(() => {
+    const ns = "nileshkolhe.com/visits";
+    const hitUrl = `https://abacus.jasoncameron.dev/hit/${ns}`;
+    const flagKey = `nk-visited-${ns}`;
+    const seen = sessionStorage.getItem(flagKey);
+    if (!seen) sessionStorage.setItem(flagKey, "1");
+    const url = seen ? `https://abacus.jasoncameron.dev/get/${ns}` : hitUrl;
+    fetch(url)
+      .then((r) => (r.ok ? r.json() : fetch(hitUrl).then((r2) => r2.json())))
+      .then((d) => setVisitCount(d.value))
+      .catch(() => {});
+  }, []);
   useEffect(() => {
     const calc = () => {
       if (!aboutRef.current) return;
@@ -170,7 +183,7 @@ export default function App() {
     { k: "Email", v: "nilesh.work.001@gmail.com", href: "mailto:nilesh.work.001@gmail.com", icon: "✉", sub: "Work Inbox • <12h reply", accent: "violet" },
     { k: "Phone", v: "+91 967 397 3040", href: "tel:+919673973040", icon: "☎", sub: "Pune • IST • 9AM-8PM", accent: "cyan" },
     { k: "Location", v: "Pune, India", href: "https://maps.google.com/?q=Pune,India", icon: "◍", sub: "Remote • Available Within 30 Days", accent: "violet" },
-    { k: "LinkedIn", v: "linkedin.com/in/nilesh-kolhe", href: "https://linkedin.com/in/nilesh-kolhe", icon: "in", sub: "Professional • Let's connect", accent: "violet" },
+    { k: "LinkedIn", v: "linkedin.com/nilesh-kolhe", href: "https://linkedin.com/in/nilesh-kolhe", icon: "in", sub: "Professional • Let's connect", accent: "violet" },
     { k: "GitHub", v: "github.com/Nilesh-Kolhe", href: "https://github.com/Nilesh-Kolhe", icon: "◇", sub: "Open Source • Builds", accent: "cyan" },
     { k: "Portfolio", v: "nileshkolhe.com", href: "https://nileshkolhe.com", icon: "↗", sub: "Portfolio • Resume", accent: "violet" },
     { k: "Writing", v: "medium.com/@nilesh_kolhe", href: "https://medium.com/@nilesh_kolhe", icon: "✎", sub: "Engineering Notes", accent: "cyan" },
@@ -531,6 +544,7 @@ export default function App() {
             <div className="space-y-6">
               <div className="rounded-[24px] bg-white/[0.04] border border-white/10 p-7 backdrop-blur-xl relative overflow-hidden group hover:border-violet-500/30 hover:bg-white/[0.06] transition-all duration-300 hover:-translate-y-1"><div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" /><div className="relative"><div className="flex items-center gap-2 mono text-[11px] tracking-[0.18em] uppercase opacity-60"><span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" /> AVAILABLE • WITHIN 30 DAYS</div><p className="mt-4 text-[16px] leading-[1.7] text-white/75">Open to Lead / Staff roles, platform modernization, and fractional architecture reviews. I work best where reliability matters — healthcare, education, finance — and where performance budgets are real.</p><div className="mt-5 flex items-center gap-2 mono text-[11px] opacity-50"><span className="w-6 h-px bg-white/20" /> Response time &lt; 12h IST • Prefer Email or LinkedIn</div></div></div>
               <div className="rounded-[24px] border border-white/10 bg-gradient-to-br from-white/[0.05] to-white/[0.02] p-6 backdrop-blur-xl"><div className="mono text-[11px] tracking-[0.18em] uppercase opacity-50 mb-4">QUICK ACTIONS</div><div className="flex flex-wrap gap-3"><MagneticButton href="mailto:nilesh.work.001@gmail.com" accent="violet" className="h-12 px-6 rounded-full bg-white text-black text-[13px] font-semibold">Email Me ↗</MagneticButton><MagneticButton href="https://linkedin.com/in/nilesh-kolhe" accent="cyan" className="h-12 px-6 rounded-full bg-white/[0.07] border border-white/15 text-[13px] font-medium hover:bg-white/[0.12]">LinkedIn</MagneticButton><MagneticButton href="https://github.com/Nilesh-Kolhe" accent="violet" className="h-12 px-6 rounded-full bg-white/[0.07] border border-white/15 text-[13px] font-medium hover:bg-white/[0.12]">GitHub</MagneticButton></div></div>
+              <div className="rounded-[24px] border border-white/10 bg-gradient-to-br from-white/[0.05] to-white/[0.02] p-6 backdrop-blur-xl flex items-center gap-4"><div className="w-11 h-11 rounded-[12px] bg-white/[0.07] border border-white/10 grid place-items-center text-[16px]">⊙</div><div><div className="mono text-[11px] tracking-[0.18em] uppercase opacity-50">VISITORS</div><div className="text-[22px] font-bold tracking-tight">{visitCount !== null ? visitCount.toLocaleString() : "—"} <span className="text-[13px] font-normal text-white/50">people stopped by</span></div></div></div>
             </div>
             <div className="grid sm:grid-cols-2 gap-4">
               {contacts.map((c) => (
