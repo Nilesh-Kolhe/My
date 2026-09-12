@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const heroPhoto = new URL("./assets/photo.jpg", import.meta.url).href;
+const heroPhoto = new URL("./assets/photo.jpeg", import.meta.url).href;
 
 function useInView(threshold = 0.15) {
   const ref = useRef<HTMLDivElement>(null);
@@ -293,10 +293,6 @@ export default function App() {
               </MagneticButton>
               <MagneticButton href="#reach-me" accent="violet" onClick={() => setMobileMenu(false)} className="flex-1 inline-flex items-center justify-center h-9 rounded-full bg-white text-black text-[13px] font-semibold tracking-wide">Let's Talk</MagneticButton>
             </div>
-            {/* <div className="mt-4 flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.06] border border-white/[0.08] w-fit">
-              <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_10px_#10b981]" />
-              <span className="mono text-[11px] tracking-wide">PUNE • {new Date().toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' })} IST</span>
-            </div> */}
           </div>
         )}
       </nav>
