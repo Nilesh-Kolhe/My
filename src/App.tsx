@@ -325,6 +325,21 @@ export default function App() {
               </div>
               <div className="mono text-[11px] tracking-[0.18em] uppercase opacity-40 mt-4">02 / PROFILE</div>
 
+              {/* Mobile/tablet only photo - between heading and paragraph.. */}
+              <div className={`lg:hidden mt-8 relative rounded-[24px] overflow-hidden h-[340px] sm:h-[420px] bg-[#0a0a0e] transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${aboutProg > 0.06 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+                <img
+                  src={heroPhoto}
+                  alt="Nilesh Kolhe"
+                  className="absolute inset-0 w-full h-full object-cover select-none"
+                  style={{
+                    objectPosition: "42% 15%",
+                    filter: "grayscale(12%) contrast(1.04) brightness(0.96) saturate(0.92)",
+                  }}
+                />
+                <div className="absolute inset-x-0 bottom-0 h-[45%] bg-gradient-to-t from-[#050507] via-[#050507]/60 to-transparent pointer-events-none" />
+                <div className="absolute inset-x-0 top-0 h-[20%] bg-gradient-to-b from-[#050507]/50 to-transparent pointer-events-none" />
+              </div>
+
               <div className={`mt-10 space-y-6 transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${aboutProg > 0.08 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`} style={{ transitionDelay: "150ms" }}>
                 <p className="text-[22px] md:text-[24px] leading-[1.55] tracking-[-0.01em] text-white/90">
                   I’m a Lead Full Stack Engineer focused on modernizing regulated platforms where <span className="text-white font-medium relative">reliability is non-negotiable<span className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-violet-400/60 to-transparent" /></span>. Over 12 years I’ve led Angular → modern stack migrations, .NET 8 API re-architecture, and real-time data pipelines.
@@ -341,7 +356,7 @@ export default function App() {
             </div>
 
             {/* RIGHT IMAGE - FIXED: no calc(50vw) clipping, clean edge-to-edge */}
-            <div className="relative -mx-6 md:-mx-8 lg:mx-0 lg:ml-0 lg:mr-[-2rem] xl:mr-[-8%] w-[calc(100%+3rem)] md:w-[calc(100%+4rem)] lg:w-[calc(100%+2rem)] xl:w-[calc(100%+8%)] h-[72vh] sm:h-[78vh] lg:h-[82vh] lg:min-h-[760px] overflow-hidden bg-[#0a0a0e] max-w-none">
+            <div className="hidden lg:block relative lg:mx-0 lg:ml-0 lg:mr-[-2rem] xl:mr-[-8%] lg:w-[calc(100%+2rem)] xl:w-[calc(100%+8%)] lg:h-[82vh] lg:min-h-[760px] overflow-hidden bg-[#0a0a0e] max-w-none">
               <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
                 <div className="absolute top-[20%] left-[18%] w-[380px] h-[380px] rounded-full bg-violet-600/[0.10] blur-[80px]" />
                 <div className="absolute bottom-[15%] right-[10%] w-[320px] h-[320px] rounded-full bg-cyan-400/[0.06] blur-[80px]" />
