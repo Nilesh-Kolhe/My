@@ -93,7 +93,9 @@ export default function App() {
   const [aboutProg, setAboutProg] = useState(0);
   const [heroMounted, setHeroMounted] = useState(false);
   const [visitCount, setVisitCount] = useState<number | null>(null);
+  const [now, setNow] = useState(new Date());
   useEffect(() => { const t = setTimeout(() => setHeroMounted(true), 80); return () => clearTimeout(t); }, []);
+  useEffect(() => { const t = setInterval(() => setNow(new Date()), 60000); return () => clearInterval(t); }, []);
   useEffect(() => {
     const ns = "nileshkolhe.com/visits";
     const hitUrl = `https://abacus.jasoncameron.dev/hit/${ns}`;
@@ -253,7 +255,7 @@ export default function App() {
           <div className="flex items-center gap-3">
             <div className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.06] border border-white/[0.08] backdrop-blur-xl">
               <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_10px_#10b981]" />
-              <span className="mono text-[11px] tracking-wide">PUNE • {new Date().toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' })} IST </span>
+              <span className="mono text-[11px] tracking-wide">PUNE • {now.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' })} IST</span>
             </div>
             <a href="https://linkedin.com/in/nilesh-kolhe/recent-activity/all/" target="_blank" rel="noreferrer" aria-label="Latest LinkedIn post" className="md:hidden relative w-11 h-11 rounded-full bg-gradient-to-br from-violet-600 to-emerald-600 border border-white/10 grid place-items-center text-[12px] font-bold shadow-[0_0_18px_rgba(6,255,165,0.3)]">
               in
